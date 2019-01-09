@@ -4,6 +4,10 @@ const cfg require('./index.json'); // a garder en version desktop
 const token = process.env.token // a garder en version heroku
 const prefix = ("?");
 
+
+bot.login(token);
+
+
 bot.on('ready', function () {
     console.log("Je suis prêt à être utilisé.")
     bot.user.setActivity('rien').catch(console.error)
